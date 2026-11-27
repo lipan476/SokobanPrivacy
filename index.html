@@ -1,103 +1,349 @@
-<h1>隐私政策</h1>
-<div>更新日期：<strong>2025/11/25</strong></div>
-<div>生效日期：<strong>2025/11/25</strong></div>
-<h2>导言</h2>
-<p>
-  <i>经典推箱子</i> 是一款由 <i>lipan</i> （以下简称“我们”）提供的产品。
-  您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。
-  本《隐私政策》与您所使用的 <i>经典推箱子</i> 服务息息相关，希望您仔细阅读，在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
-</p>
-<p><strong>您使用或继续使用我们的服务，即意味着同意我们按照本《隐私政策》收集、使用、储存和分享您的相关信息。</strong></p>
-<p>如对本《隐私政策》或相关事宜有任何问题，请通过 <strong>carkit@126.com</strong> 与我们联系。</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Cartoon Box Push</title>
+  <style>
+    :root {
+      --bg-top: #dff2ff;
+      --bg-bottom: #fff7e9;
+      --card: #ffffff;
+      --border: #cbdceb;
+      --text: #24364e;
+      --muted: #5f7691;
+      --accent: #ff9f2e;
+      --accent-dark: #c96d0d;
+      --blue: #4c9aff;
+      --mint: #2ec4a6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg-top) 0%, #f1f8ff 50%, var(--bg-bottom) 100%);
+      padding: 28px 16px 48px;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .lang-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .lang-btn {
+      border: 2px solid #b6cbe0;
+      border-bottom-width: 4px;
+      background: #ffffff;
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.1s ease, background 0.15s ease;
+    }
+    .lang-btn:hover { background: #f3f8fd; }
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent-dark);
+      color: #ffffff;
+    }
+    .card {
+      background: var(--card);
+      border: 3px solid var(--border);
+      border-bottom-width: 6px;
+      border-radius: 26px;
+      padding: 32px 28px;
+      box-shadow: 0 10px 28px rgba(36, 54, 78, 0.08);
+    }
+    .badge {
+      display: inline-block;
+      background: #e6faf5;
+      color: #137a65;
+      border: 2px solid #9de5d5;
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      color: var(--text);
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px dashed #e1ecf5;
+    }
+    h2 {
+      font-size: 19px;
+      margin: 24px 0 8px;
+      color: #1f3d5c;
+    }
+    p, li {
+      font-size: 15px;
+      color: #334a66;
+      margin: 8px 0;
+    }
+    ul {
+      padding-left: 22px;
+      margin: 8px 0;
+    }
+    .contact-box {
+      margin-top: 20px;
+      background: #f7fbff;
+      border: 2px solid #d2e4f2;
+      border-radius: 16px;
+      padding: 16px 18px;
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 22px;
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+    @media (max-width: 520px) {
+      .card { padding: 24px 18px; }
+      h1 { font-size: 23px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar" role="tablist" aria-label="Language Selector">
+      <button class="lang-btn" data-lang="en">English</button>
+      <button class="lang-btn" data-lang="zh-CN">简体中文</button>
+      <button class="lang-btn" data-lang="zh-TW">繁體中文</button>
+      <button class="lang-btn" data-lang="ja">日本語</button>
+      <button class="lang-btn" data-lang="ko">한국어</button>
+    </div>
 
-<h2>1. 我们收集的信息</h2>
-<p>我们或我们的第三方合作伙伴提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。</p>
+    <main class="card">
+      <!-- English -->
+      <article class="section" id="lang-en">
+        <span class="badge">100% Offline · Zero Data Collection</span>
+        <h1>Privacy Policy</h1>
+        <div class="meta">
+          App: <strong>Cartoon Box Push</strong> (<code>com.wildfire.sokoban</code>)<br />
+          Developer: <strong>JDI Developer</strong> · Last Updated: <strong>November 27, 2026</strong>
+        </div>
 
+        <h2>1. Overview</h2>
+        <p>JDI Developer respects your privacy. <strong>Cartoon Box Push</strong> is a purely offline single-player puzzle game designed to work without collecting, storing, or transmitting any personal information.</p>
 
-    
+        <h2>2. Data Collection &amp; Sharing</h2>
+        <ul>
+          <li><strong>No Personal Data Collected:</strong> We do not collect your name, email address, phone number, location, device identifiers, advertising ID, or usage analytics.</li>
+          <li><strong>No Third-Party SDKs or Ads:</strong> The app does not contain advertisements, analytics trackers, crash-reporting SDKs, or social login SDKs.</li>
+          <li><strong>No Internet Access Required:</strong> The game operates completely offline and does not transmit data to any external servers.</li>
+        </ul>
 
+        <h2>3. Local Storage on Your Device</h2>
+        <p>Your level progress, best step counts, star ratings, sound preference, and selected language are stored exclusively in local storage on your device. This data never leaves your device and is automatically removed if you clear app data or uninstall the app.</p>
 
+        <h2>4. Children's Privacy</h2>
+        <p>Because our app does not collect any personal information from any user, it complies with applicable children's privacy regulations worldwide (including COPPA and GDPR-K).</p>
 
+        <h2>5. Changes to This Policy</h2>
+        <p>If we ever update this Privacy Policy in the future, we will post the revised version on this page with an updated effective date.</p>
 
+        <h2>6. Contact Us</h2>
+        <div class="contact-box">
+          If you have any questions about this Privacy Policy, please contact us at:<br />
+          <strong>Email:</strong> <a href="mailto:lipan476@126.com">lipan476@126.com</a>
+        </div>
+      </article>
 
+      <!-- Simplified Chinese -->
+      <article class="section" id="lang-zh-CN">
+        <span class="badge">纯单机离线 · 零数据收集</span>
+        <h1>隐私政策</h1>
+        <div class="meta">
+          应用名称：<strong>卡通推箱子（Cartoon Box Push）</strong>（<code>com.wildfire.sokoban</code>）<br />
+          开发者：<strong>JDI Developer</strong> · 更新日期：<strong>2026年11月27日</strong>
+        </div>
 
+        <h2>一、概述</h2>
+        <p>JDI Developer 高度重视您的隐私保护。《卡通推箱子》是一款纯粹的离线单机益智游戏，我们不会收集、存储或向任何第三方传输您的任何个人信息。</p>
 
-<h2>2. 信息的存储</h2>
-<strong>2.1 信息存储的方式和期限</strong>
-<ul>
- <li>我们会通过安全的方式存储您的信息，包括本地存储（例如利用APP进行数据缓存）、数据库和服务器日志。</li>
- <li>一般情况下，我们只会在为实现服务目的所必需的时间内或法律法规规定的条件下存储您的个人信息。</li>
-</ul>
+        <h2>二、信息收集与共享说明</h2>
+        <ul>
+          <li><strong>不收集个人信息：</strong>本应用不会收集您的姓名、邮箱、手机号、位置信息、设备标识符、广告 ID 或任何行为分析数据。</li>
+          <li><strong>无第三方 SDK 与广告：</strong>本应用不包含任何广告、第三方统计分析 SDK、崩溃上报 SDK 或社交登录组件。</li>
+          <li><strong>无需联网：</strong>本应用完全离线运行，不会向任何外部服务器发送数据。</li>
+        </ul>
 
-<strong>2.2 信息存储的地域</strong>
-<ul>
- <li>我们会按照法律法规规定，将境内收集的用户个人信息存储于中国境内。</li>
- <li>目前我们不会跨境传输或存储您的个人信息。将来如需跨境传输或存储的，我们会向您告知信息出境的目的、接收方、安全保证措施和安全风险，并征得您的同意。</li>
-</ul>
+        <h2>三、设备本地数据存储</h2>
+        <p>您的关卡进度、最佳步数、星级评价、音效开关及语言偏好仅保存在您的手机本地存储中。这些数据不会上传至云端；当您清除应用数据或卸载应用时，本地存档会随之删除。</p>
 
-<strong>2.3 产品或服务停止运营时的通知</strong>
-<ul>
- <li>当我们的产品或服务发生停止运营的情况时，我们将以推送通知、公告等形式通知您，并在合理期限内删除您的个人信息或进行匿名化处理，法律法规另有规定的除外。</li>
-</ul>
+        <h2>四、儿童隐私保护</h2>
+        <p>由于本应用不向任何年龄段的用户收集任何个人数据，因此严格符合包括 COPPA、GDPR 在内的全球儿童隐私保护法规要求。</p>
 
-<h2>3. 信息安全</h2>
-<p>
-我们使用各种安全技术和程序，以防信息的丢失、不当使用、未经授权阅览或披露。例如，在某些服务中，我们将利用加密技术（例如SSL）来保护您提供的个人信息。但请您理解，由于技术的限制以及可能存在的各种恶意手段，在互联网行业，即便竭尽所能加强安全措施，也不可能始终保证信息百分之百的安全。您需要了解，您接入我们的服务所用的系统和通讯网络，有可能因我们可控范围外的因素而出现问题。
-</p>
+        <h2>五、隐私政策的更新</h2>
+        <p>如本隐私政策未来有任何变更，我们将在本页面发布更新后的内容并标注最新的更新日期。</p>
 
-<h2>4. 我们如何使用信息</h2>
-<p>我们可能将在向您提供服务的过程之中所收集的信息用作下列用途：</p>
-<ul>
-  <li>向您提供服务；</li>
-  <li>在我们提供服务时，用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途，确保我们向您提供的产品和服务的安全性；</li>
-  <li>帮助我们设计新服务，改善我们现有服务；</li>
-  <li>使我们更加了解您如何接入和使用我们的服务，从而针对性地回应您的个性化需求，例如语言设定、位置设定、个性化的帮助服务和指示，或对您和其他用户作出其他方面的回应；</li>
-  <li>向您提供与您更加相关的广告以替代普遍投放的广告；</li>
-  <li>评估我们服务中的广告和其他促销及推广活动的效果，并加以改善；</li>
-  <li>软件认证或管理软件升级；</li>
-  <li>让您参与有关我们产品和服务的调查。</li>
-</ul>
+        <h2>六、联系我们</h2>
+        <div class="contact-box">
+          如您对本隐私政策有任何疑问，请通过以下方式联系我们：<br />
+          <strong>联系邮箱：</strong> <a href="mailto:lipan476@126.com">lipan476@126.com</a>
+        </div>
+      </article>
 
-<h2>5. 信息共享</h2>
-<p>
-目前，我们不会主动共享或转让您的个人信息至第三方，如存在其他共享或转让您的个人信息或您需要我们将您的个人信息共享或转让至第三方情形时，我们会直接或确认第三方征得您对上述行为的明示同意。
-</p>
-<p>
-为了投放广告，评估、优化广告投放效果等目的，我们需要向广告主及其代理商等第三方合作伙伴共享您的部分数据，要求其严格遵守我们关于数据隐私保护的措施与要求，包括但不限于根据数据保护协议、承诺书及相关数据处理政策进行处理，避免识别出个人身份，保障隐私安全。
-</p>
-<p>
-我们不会向合作伙伴分享可用于识别您个人身份的信息（例如您的姓名或电子邮件地址），除非您明确授权。
-</p>
-<p>
-我们不会对外公开披露所收集的个人信息，如必须公开披露时，我们会向您告知此次公开披露的目的、披露信息的类型及可能涉及的敏感信息，并征得您的明示同意。
-</p>
-<p>
-随着我们业务的持续发展，我们有可能进行合并、收购、资产转让等交易，我们将告知您相关情形，按照法律法规及不低于本《隐私政策》所要求的标准继续保护或要求新的控制者继续保护您的个人信息。
-</p>
-<p>
-另外，根据相关法律法规及国家标准，以下情形中，我们可能会共享、转让、公开披露个人信息无需事先征得您的授权同意：
-</p>
-<ul>
-  <li>与国家安全、国防安全直接相关的；</li>
-  <li>与公共安全、公共卫生、重大公共利益直接相关的；</li>
-  <li>犯罪侦查、起诉、审判和判决执行等直接相关的；</li>
-  <li>出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；</li>
-  <li>个人信息主体自行向社会公众公开个人信息的；</li>
-  <li>从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。</li>
-</ul>
+      <!-- Traditional Chinese -->
+      <article class="section" id="lang-zh-TW">
+        <span class="badge">純離線單機 · 零資料收集</span>
+        <h1>隱私權政策</h1>
+        <div class="meta">
+          應用程式名稱：<strong>卡通推箱子（Cartoon Box Push）</strong>（<code>com.wildfire.sokoban</code>）<br />
+          開發者：<strong>JDI Developer</strong> · 更新日期：<strong>2026年11月27日</strong>
+        </div>
 
-<h2>6. 您的权利</h2>
-<p>
-在您使用我们的服务期间，我们可能会视产品具体情况为您提供相应的操作设置，以便您可以查询、删除、更正或撤回您的相关个人信息，您可参考相应的具体指引进行操作。此外，我们还设置了投诉举报渠道，您的意见将会得到及时的处理。如果您无法通过上述途径和方式行使您的个人信息主体权利，您可以通过本《隐私政策》中提供的联系方式提出您的请求，我们会按照法律法规的规定予以反馈。
-</p>
+        <h2>一、概述</h2>
+        <p>JDI Developer 非常重視您的隱私權。《卡通推箱子》是一款純離線單機益智遊戲，我們不會收集、儲存或向任何第三方傳輸您的任何個人資料。</p>
 
+        <h2>二、資料收集與分享</h2>
+        <ul>
+          <li><strong>不收集個人資料：</strong>本應用程式不會收集您的姓名、電子郵件、電話、位置資訊、裝置識別碼、廣告 ID 或任何使用分析資料。</li>
+          <li><strong>無第三方 SDK 與廣告：</strong>本應用程式不包含任何廣告、分析追蹤工具或第三方 SDK。</li>
+          <li><strong>無需網路連線：</strong>本遊戲完全離線運作，不會向外部伺服器傳送任何資料。</li>
+        </ul>
 
-<h2>7. 变更</h2>
-<p>
-我们可能适时修订本《隐私政策》的条款。当变更发生时，我们会在版本更新时向您提示新的《隐私政策》，并向您说明生效日期。请您仔细阅读变更后的《隐私政策》内容，<strong>若您继续使用我们的服务，即表示您同意我们按照更新后的《隐私政策》处理您的个人信息。</strong>
-</p>
+        <h2>三、裝置本機儲存</h2>
+        <p>您的關卡進度、最佳步數、星級評價、音效與語言設定僅儲存在您的裝置本機中，不會離開您的裝置；當您清除應用程式資料或解除安裝時，相關存檔將一併刪除。</p>
 
-<h2>8. 未成年人保护</h2>
-<p>
-我们鼓励父母或监护人指导未满十八岁的未成年人使用我们的服务。我们建议未成年人鼓励他们的父母或监护人阅读本《隐私政策》，并建议未成年人在提交的个人信息之前寻求父母或监护人的同意和指导。
-</p>
+        <h2>四、兒童隱私保護</h2>
+        <p>由於本應用程式不收集任何使用者的個人資料，因此符合全球適用的兒童隱私保護法規（包含 COPPA 與 GDPR）。</p>
+
+        <h2>五、政策變更</h2>
+        <p>若本隱私權政策未來有更新，我們將於本頁面公布最新版本及更新日期。</p>
+
+        <h2>六、聯絡我們</h2>
+        <div class="contact-box">
+          若您對本隱私權政策有任何疑問，歡迎透過以下信箱與我們聯絡：<br />
+          <strong>聯絡信箱：</strong> <a href="mailto:lipan476@126.com">lipan476@126.com</a>
+        </div>
+      </article>
+
+      <!-- Japanese -->
+      <article class="section" id="lang-ja">
+        <span class="badge">完全オフライン・個人情報収集なし</span>
+        <h1>プライバシーポリシー</h1>
+        <div class="meta">
+          アプリ名：<strong>カートゥーン箱押し（Cartoon Box Push）</strong>（<code>com.wildfire.sokoban</code>）<br />
+          開発者：<strong>JDI Developer</strong> · 最終更新日：<strong>2026年11月27日</strong>
+        </div>
+
+        <h2>1. 基本方針</h2>
+        <p>JDI Developer はユーザーのプライバシーを尊重します。『カートゥーン箱押し』は完全オフラインのパズルゲームであり、個人情報を一切収集・保存・送信いたしません。</p>
+
+        <h2>2. 情報の収集および第三者提供について</h2>
+        <ul>
+          <li><strong>個人情報の非収集：</strong>氏名、メールアドレス、位置情報、端末識別子、広告ID、利用解析データなどを一切収集しません。</li>
+          <li><strong>広告・外部SDKなし：</strong>本アプリには広告、解析ツール、外部SDKは一切組み込まれていません。</li>
+          <li><strong>通信なし：</strong>本アプリは完全にオフラインで動作し、外部サーバーへデータを送信することはありません。</li>
+        </ul>
+
+        <h2>3. 端末内のローカル保存</h2>
+        <p>ステージの進行状況、ベスト歩数、獲得した星、効果音や言語の設定はお使いの端末内のみに保存されます。これらのデータは外部へ送信されず、アプリのデータ消去またはアンインストール時に削除されます。</p>
+
+        <h2>4. お子様のプライバシー</h2>
+        <p>本アプリはいかなるユーザーからも個人情報を収集しないため、各国の児童プライバシー保護規制（COPPA、GDPR等）に適合しています。</p>
+
+        <h2>5. ポリシーの変更</h2>
+        <p>本ポリシーを変更する場合は、本ページにて最新の改定内容および更新日を掲示します。</p>
+
+        <h2>6. お問い合わせ</h2>
+        <div class="contact-box">
+          本プライバシーポリシーに関するお問い合わせは下記までご連絡ください：<br />
+          <strong>メール：</strong> <a href="mailto:lipan476@126.com">lipan476@126.com</a>
+        </div>
+      </article>
+
+      <!-- Korean -->
+      <article class="section" id="lang-ko">
+        <span class="badge">100% 오프라인 · 개인정보 수집 없음</span>
+        <h1>개인정보처리방침</h1>
+        <div class="meta">
+          앱 이름: <strong>카툰 상자밀기 (Cartoon Box Push)</strong> (<code>com.wildfire.sokoban</code>)<br />
+          개발자: <strong>JDI Developer</strong> · 최종 수정일: <strong>2026년 11월 27일</strong>
+        </div>
+
+        <h2>1. 개요</h2>
+        <p>JDI Developer는 사용자의 개인정보를 소중하게 생각합니다. 『카툰 상자밀기』는 어떠한 개인정보도 수집, 저장 또는 외부로 전송하지 않는 순수 오프라인 퍼즐 게임입니다.</p>
+
+        <h2>2. 개인정보 수집 및 제3자 제공</h2>
+        <ul>
+          <li><strong>개인정보 미수집:</strong> 이름, 이메일, 전화번호, 위치 정보, 기기 식별자, 광고 ID 또는 사용 통계 데이터를 일체 수집하지 않습니다.</li>
+          <li><strong>광고 및 외부 SDK 없음:</strong> 본 앱에는 광고, 분석 도구 또는 제3자 SDK가 포함되어 있지 않습니다.</li>
+          <li><strong>네트워크 통신 없음:</strong> 본 앱은 완전히 오프라인으로 작동하며 외부 서버로 어떠한 데이터도 전송하지 않습니다.</li>
+        </ul>
+
+        <h2>3. 기기 내 로컬 저장</h2>
+        <p>스테이지 진행 상황, 최고 이동 기록, 별점, 효과음 및 언어 설정은 사용자의 기기 내부에만 저장됩니다. 이 데이터는 외부로 전송되지 않으며, 앱 데이터를 삭제하거나 앱을 제거하면 함께 삭제됩니다.</p>
+
+        <h2>4. 아동 개인정보 보호</h2>
+        <p>본 앱은 모든 연령대의 사용자로부터 어떠한 개인정보도 수집하지 않으므로 COPPA, GDPR 등 관련 아동 개인정보 보호 규정을 준수합니다.</p>
+
+        <h2>5. 방침의 변경</h2>
+        <p>본 개인정보처리방침이 변경되는 경우 이 페이지를 통해 최신 내용과 변경 일자를 안내합니다.</p>
+
+        <h2>6. 문의하기</h2>
+        <div class="contact-box">
+          본 개인정보처리방침에 관한 문의 사항은 아래 이메일로 연락해 주시기 바랍니다:<br />
+          <strong>이메일:</strong> <a href="mailto:lipan476@126.com">lipan476@126.com</a>
+        </div>
+      </article>
+    </main>
+
+    <div class="footer">© 2026 JDI Developer · Cartoon Box Push</div>
+  </div>
+
+  <script>
+    (function () {
+      var btns = document.querySelectorAll('.lang-btn');
+      var sections = document.querySelectorAll('.section');
+
+      function setLang(code) {
+        sections.forEach(function (sec) {
+          sec.classList.toggle('active', sec.id === 'lang-' + code);
+        });
+        btns.forEach(function (btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-lang') === code);
+        });
+        document.documentElement.lang = code;
+      }
+
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.getAttribute('data-lang'));
+        });
+      });
+
+      var nav = (navigator.language || 'en').toLowerCase();
+      var initial = 'en';
+      if (nav.indexOf('zh') === 0) {
+        initial = (nav.indexOf('tw') !== -1 || nav.indexOf('hk') !== -1 || nav.indexOf('hant') !== -1) ? 'zh-TW' : 'zh-CN';
+      } else if (nav.indexOf('ja') === 0) {
+        initial = 'ja';
+      } else if (nav.indexOf('ko') === 0) {
+        initial = 'ko';
+      }
+      setLang(initial);
+    })();
+  </script>
+</body>
+</html>
